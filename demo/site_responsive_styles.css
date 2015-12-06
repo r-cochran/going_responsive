@@ -31,3 +31,24 @@ img {
     width: inherit;
   }
 }
+
+/* fix for small font */
+
+@media screen and (max-width: 767px){
+  .blurb, .description {
+    font-size: 24px;
+  }
+
+  .important {
+    font-size: 30px;
+  }
+
+  .description {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .credit {
+    font-size: 16px;
+  }
+}
