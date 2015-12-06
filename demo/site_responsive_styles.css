@@ -71,3 +71,36 @@ img {
     font-size: 30px;
   }
 }
+
+/* fix for theme */
+.titleWrapper br {
+  display: none;
+}
+
+@media screen and (max-width: 400px){
+  .titleWrapper br {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .titleWrapper {
+    width: 100%;
+    background-color: #d24d33;;
+  }
+
+  .number, .title {
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .number {
+    width: 20%;
+  }
+
+  .title {
+    width: 80%;
+    background-color: white;
+  }
+}
