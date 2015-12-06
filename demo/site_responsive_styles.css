@@ -52,3 +52,22 @@ img {
     font-size: 16px;
   }
 }
+
+/* fix for small buttons */
+@media screen and (max-width: 767px){
+  .socialMediaBar {
+    width: 100%;
+  }
+
+  .socialMediaLink {
+    display: inline-block;
+    width: 30%;
+    height: 36px;
+    margin: 0px;
+    font-size: 22px;
+  }
+
+  .socialMediaLink i {
+    font-size: 30px;
+  }
+}
