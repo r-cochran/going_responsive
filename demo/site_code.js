@@ -4,6 +4,12 @@ $(document).ready(function(){
 			showModalAd();
 		}
 	});
+
+	$(document).on("keyup", function(e){
+		if(e.keyCode == '27'){
+			window.location = "#";
+		}
+	});
 });
 
 var showModalAd = function(){
