@@ -10,8 +10,17 @@ $(document).ready(function(){
 			window.location = "#";
 		}
 	});
+
+	$(document).on("click", ".menuButton", toggleMenu);
 });
 
 var showModalAd = function(){
 	window.location = "#openModal";
+}
+
+var toggleMenu = function(){
+	var menuButton = $(this),
+		menu = $(".menu ol");
+	menuButton.toggleClass("shown");
+	menu.toggle();
 }

@@ -120,3 +120,52 @@ img {
     right: 3px;
   }
 }
+
+/* fix for menu */
+.menuButton {
+  display: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 33px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menuButton:hover, .menuButton.shown {
+  color: #d24d33;
+  background-color: white;
+}
+
+@media screen and (max-width: 400px){
+  .menuButton {
+    display: inline;
+  }
+
+  .menu ol {
+    display: none;
+    padding: 0px;
+  }
+
+  .menu ol li {
+    display: inline-block;
+    width: 95%;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 5px;
+  }
+
+  .menu ol li a {
+    font-size: 32px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .banner {
+    text-align: left;
+    font-size: 38px;
+    padding-left: 10px;
+  }
+}
