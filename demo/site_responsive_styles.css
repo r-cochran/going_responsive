@@ -104,3 +104,19 @@ img {
     background-color: white;
   }
 }
+
+/* fix for immortal modal */
+@media screen and (max-width: 767px){
+  .modalDialog {
+    width: 100%;
+  }
+
+  .modalDialog > div {
+    width: auto;
+  }
+
+  .close {
+    top: 3px;
+    right: 3px;
+  }
+}
