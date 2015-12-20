@@ -2,28 +2,39 @@
 
 	<style>
 		h1 {
-			color: red;	
+			color: blue;	
 		}
 
 		img {
 			display: none;
+			width: 100%;
+			position: absolute;
+		    left: 0;
+		    top: 0;
+		    z-index: -1;
 		}
 
-		@media screen and (max-width: 480px){
+		span {
+			display: none;
+		}
+
+		@media screen and (max-width: 767px){
 			h1 {
-				color: blue;
+				color: red;
+				text-align: center;
+    			font-size: 50px;
 			}
 			img {
 				display: inline;
 			}
 			span {
-				display: none;
+				display: inline;
 			}
 		}
 	</style>
 	<body>
-		<h1>This pen is <span>not</span> blue.</h1>
-		<img src="jim_carey.jpg" />
+		<h1>WE ARE <span>NOT</span> GOOD.</h1>
+		<img src="bsod.png" />
 	</body>
 
 </html>
